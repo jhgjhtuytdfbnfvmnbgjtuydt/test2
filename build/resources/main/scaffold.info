@@ -1,5 +1,5 @@
 package:es.santalucia
 dataBaseName:santalucia
-username:admin
+username:root
 password:xd
 springVersion:2.x
