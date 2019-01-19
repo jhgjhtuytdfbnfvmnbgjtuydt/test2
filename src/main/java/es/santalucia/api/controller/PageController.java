@@ -38,7 +38,7 @@ public class PageController {
 		model.addAttribute("listPage", all);
 		return "page/index";
 	}
-	
+
 	@GetMapping("/{id}")
 	public String show(Model model, @PathVariable("id") Integer id) {
 		if (id != null) {
@@ -53,7 +53,7 @@ public class PageController {
 		model.addAttribute("page", entity);
 		return "page/form";
 	}
-	
+
 	@PostMapping
 	public String create(@Valid @ModelAttribute Page entity, BindingResult result, RedirectAttributes redirectAttributes) {
 		Page page = null;
@@ -66,7 +66,7 @@ public class PageController {
 		}
 		return "redirect:/pages/" + page.getId();
 	}
-	
+
 	@GetMapping("/{id}/edit")
 	public String update(Model model, @PathVariable("id") Integer id) {
 		try {
@@ -79,7 +79,7 @@ public class PageController {
 		}
 		return "page/form";
 	}
-	
+
 	@PutMapping
 	public String update(@Valid @ModelAttribute Page entity, BindingResult result, RedirectAttributes redirectAttributes) {
 		Page page = null;
@@ -92,7 +92,7 @@ public class PageController {
 		}
 		return "redirect:/pages/" + page.getId();
 	}
-	
+
 	@DeleteMapping("/{id}")
 	public String delete(@PathVariable("id") Integer id, RedirectAttributes redirectAttributes) {
 		try {
