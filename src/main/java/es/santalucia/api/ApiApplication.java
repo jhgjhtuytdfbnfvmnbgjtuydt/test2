@@ -7,7 +7,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 
 @SpringBootApplication
 @EnableConfigurationProperties
-@EntityScan(basePackages = { "es.santalucia.model" }) // scan JPA entities
+@EntityScan(basePackages = { "es.santalucia.api.model" }) // scan JPA entities
 public class ApiApplication {
 
 	public static void main(String[] args) {

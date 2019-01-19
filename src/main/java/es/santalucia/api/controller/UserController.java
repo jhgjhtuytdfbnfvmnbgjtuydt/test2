@@ -1,4 +1,4 @@
-package es.santalucia.controller;
+package es.santalucia.api.controller;
 
 import java.util.List;
 
@@ -17,8 +17,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-import es.santalucia.model.User;
-import es.santalucia.service.UserService;
+import es.santalucia.api.model.User;
+import es.santalucia.api.service.UserService;
 
 @Controller
 @RequestMapping("/users")

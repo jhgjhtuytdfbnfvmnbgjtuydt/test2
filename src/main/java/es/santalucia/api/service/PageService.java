@@ -1,10 +1,10 @@
-package es.santalucia.service;
+package es.santalucia.api.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
-import es.santalucia.model.Page;
-import es.santalucia.repository.PageRepository;
+import es.santalucia.api.model.Page;
+import es.santalucia.api.repository.PageRepository;
 import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 

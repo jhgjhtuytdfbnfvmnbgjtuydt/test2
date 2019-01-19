@@ -1,10 +1,10 @@
-package es.santalucia.service;
+package es.santalucia.api.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
-import es.santalucia.model.Element;
-import es.santalucia.repository.ElementRepository;
+import es.santalucia.api.model.Element;
+import es.santalucia.api.repository.ElementRepository;
 import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
@@ -22,7 +22,7 @@ public class ElementService {
 	public Element findOne(Integer id) {
 		return elementRepository.findById(id).get();
 	}
-	
+
 	@Transactional(readOnly = false)
 	public Element save(Element entity) {
 		return elementRepository.save(entity);
@@ -34,4 +34,4 @@ public class ElementService {
 	}
 
 }
-	
+

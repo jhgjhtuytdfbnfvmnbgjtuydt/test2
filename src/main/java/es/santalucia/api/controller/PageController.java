@@ -1,4 +1,4 @@
-package es.santalucia.controller;
+package es.santalucia.api.controller;
 
 import java.util.List;
 
@@ -17,95 +17,95 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-import es.santalucia.model.Element;
-import es.santalucia.service.ElementService;
+import es.santalucia.api.model.Page;
+import es.santalucia.api.service.PageService;
 
 @Controller
-@RequestMapping("/elements")
-public class ElementController {
+@RequestMapping("/pages")
+public class PageController {
 
-	private static final String MSG_SUCESS_INSERT = "Element inserted successfully.";
-	private static final String MSG_SUCESS_UPDATE = "Element successfully changed.";
-	private static final String MSG_SUCESS_DELETE = "Deleted Element successfully.";
+	private static final String MSG_SUCESS_INSERT = "Page inserted successfully.";
+	private static final String MSG_SUCESS_UPDATE = "Page successfully changed.";
+	private static final String MSG_SUCESS_DELETE = "Deleted Page successfully.";
 	private static final String MSG_ERROR = "Error.";
 
 	@Autowired
-	private ElementService elementService;
+	private PageService pageService;
 
 	@GetMapping
 	public String index(Model model) {
-		List<Element> all = elementService.findAll();
-		model.addAttribute("listElement", all);
-		return "element/index";
+		List<Page> all = pageService.findAll();
+		model.addAttribute("listPage", all);
+		return "page/index";
 	}
 	
 	@GetMapping("/{id}")
 	public String show(Model model, @PathVariable("id") Integer id) {
 		if (id != null) {
-			Element element = elementService.findOne(id);
-			model.addAttribute("element", element);
+			Page page = pageService.findOne(id);
+			model.addAttribute("page", page);
 		}
-		return "element/show";
+		return "page/show";
 	}
 
 	@GetMapping(value = "/new")
-	public String create(Model model, @ModelAttribute Element entity) {
-		model.addAttribute("element", entity);
-		return "element/form";
+	public String create(Model model, @ModelAttribute Page entity) {
+		model.addAttribute("page", entity);
+		return "page/form";
 	}
 	
 	@PostMapping
-	public String create(@Valid @ModelAttribute Element entity, BindingResult result, RedirectAttributes redirectAttributes) {
-		Element element = null;
+	public String create(@Valid @ModelAttribute Page entity, BindingResult result, RedirectAttributes redirectAttributes) {
+		Page page = null;
 		try {
-			element = elementService.save(entity);
+			page = pageService.save(entity);
 			redirectAttributes.addFlashAttribute("success", MSG_SUCESS_INSERT);
 		} catch (Exception e) {
 			redirectAttributes.addFlashAttribute("error", MSG_ERROR);
 			e.printStackTrace();
 		}
-		return "redirect:/elements/" + element.getId();
+		return "redirect:/pages/" + page.getId();
 	}
 	
 	@GetMapping("/{id}/edit")
 	public String update(Model model, @PathVariable("id") Integer id) {
 		try {
 			if (id != null) {
-				Element entity = elementService.findOne(id);
-				model.addAttribute("element", entity);
+				Page entity = pageService.findOne(id);
+				model.addAttribute("page", entity);
 			}
 		} catch (Exception e) {
 			throw new ServiceException(e.getMessage());
 		}
-		return "element/form";
+		return "page/form";
 	}
 	
 	@PutMapping
-	public String update(@Valid @ModelAttribute Element entity, BindingResult result, RedirectAttributes redirectAttributes) {
-		Element element = null;
+	public String update(@Valid @ModelAttribute Page entity, BindingResult result, RedirectAttributes redirectAttributes) {
+		Page page = null;
 		try {
-			element = elementService.save(entity);
+			page = pageService.save(entity);
 			redirectAttributes.addFlashAttribute("success", MSG_SUCESS_UPDATE);
 		} catch (Exception e) {
 			redirectAttributes.addFlashAttribute("error", MSG_ERROR);
 			e.printStackTrace();
 		}
-		return "redirect:/elements/" + element.getId();
+		return "redirect:/pages/" + page.getId();
 	}
 	
 	@DeleteMapping("/{id}")
 	public String delete(@PathVariable("id") Integer id, RedirectAttributes redirectAttributes) {
 		try {
 			if (id != null) {
-				Element entity = elementService.findOne(id);
-				elementService.delete(entity);
+				Page entity = pageService.findOne(id);
+				pageService.delete(entity);
 				redirectAttributes.addFlashAttribute("success", MSG_SUCESS_DELETE);
 			}
 		} catch (Exception e) {
 			redirectAttributes.addFlashAttribute("error", MSG_ERROR);
 			throw new ServiceException(e.getMessage());
 		}
-		return "redirect:/elements/index";
+		return "redirect:/pages/index";
 	}
 
 }

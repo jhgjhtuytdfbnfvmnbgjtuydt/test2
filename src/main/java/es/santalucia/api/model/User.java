@@ -1,4 +1,4 @@
-package es.santalucia.model;
+package es.santalucia.api.model;
 import javax.persistence.Entity;
 import javax.persistence.GenerationType;
 import javax.persistence.Table;
