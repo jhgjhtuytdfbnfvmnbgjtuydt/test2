@@ -1,0 +1,27 @@
+2019-01-20 00:01:28.931  WARN 54539 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h57m45s971ms).
+2019-01-20 00:39:09.869  WARN 54539 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=37m40s938ms).
+2019-01-20 00:39:39.394  WARN 54539 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s525ms), soft-evicting connections from pool.
+2019-01-20 01:58:20.670  WARN 54539 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m40s700ms).
+2019-01-20 07:38:10.398  WARN 54539 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4h7m48s802ms).
+2019-01-20 10:15:04.927  WARN 54539 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h36m54s96ms).
+2019-01-20 12:21:21.300  WARN 54539 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h6m16s815ms).
+2019-01-20 12:21:50.763  WARN 54539 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s459ms), soft-evicting connections from pool.
+2019-01-20 14:12:46.555  WARN 54539 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s948ms).
+2019-01-20 15:41:32.536  WARN 54539 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h27m15s585ms).
+2019-01-20 16:27:12.556  INFO 54539 --- [Thread-11] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-01-20 16:27:12.581  INFO 54539 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-01-20 16:27:12.608  INFO 54539 --- [Thread-11] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-01-20 16:27:12.624 DEBUG 54539 --- [Thread-11] org.hibernate.SQL                        : 
+    
+    drop table if exists elements
+2019-01-20 16:27:12.649 DEBUG 54539 --- [Thread-11] org.hibernate.SQL                        : 
+    
+    drop table if exists hibernate_sequence
+2019-01-20 16:27:12.651 DEBUG 54539 --- [Thread-11] org.hibernate.SQL                        : 
+    
+    drop table if exists pages
+2019-01-20 16:27:12.655 DEBUG 54539 --- [Thread-11] org.hibernate.SQL                        : 
+    
+    drop table if exists users
+2019-01-20 16:27:12.722  INFO 54539 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-01-20 16:27:12.750  INFO 54539 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

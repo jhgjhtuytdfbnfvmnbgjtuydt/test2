@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="layout">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<title>New Element</title>
+</head>
+<body>
+	<div layout:fragment="content">
+		<h1 th:if="${element.id == null}">New Element</h1>
+		<h1 th:if="${element.id != null}">Edit Element</h1>
+		<hr />
+		<form th:action="@{/elements}" th:method="@{${element.id == null} ? 'post' : 'put'}"
+			th:object="${element}">
+			<input type="hidden" th:field="*{id}" /> 
+			
+				<div class="form-group"> 
+					<label for="element_id">Element_id</label>  
+					<input id="element_id" name="element_id" type="text" class="form-control" th:field="*{element_id}" />  
+				</div> 
+				<div class="form-group"> 
+					<label for="attribute_name">Attribute_name</label>  
+					<input id="attribute_name" name="attribute_name" type="text" class="form-control" th:field="*{attribute_name}" />  
+				</div> 
+				<div class="form-group"> 
+					<label for="value">Value</label>  
+					<input id="value" name="value" type="text" class="form-control" th:field="*{value}" />  
+				</div> 
+				<div class="form-group"> 
+					<label for="page_id">Page_id</label>  
+					<input id="page_id" name="page_id" type="text" class="form-control" th:field="*{page_id}" />  
+				</div> 
+
+			<button type="submit" class="btn btn-success">Save</button>
+			<a th:href="@{/elements}" class="btn btn-default">Back</a>
+		</form>
+	</div>
+</body>
+</html>

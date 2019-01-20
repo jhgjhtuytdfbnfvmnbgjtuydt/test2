@@ -1,0 +1,5 @@
+package:es.santalucia.api
+dataBaseName:santalucia
+username:root
+password:xd
+springVersion:2.x
