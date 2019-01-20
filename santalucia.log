@@ -1,254 +1,27 @@
-2019-01-19 16:18:58.015  INFO 39759 --- [Test worker] es.santalucia.api.ApiApplicationTests    : Starting ApiApplicationTests on MacBook-Air-77.home with PID 39759 (started by admin in /Users/admin/Library/Mobile Documents/com~apple~CloudDocs/repos/afkar/santalucia-be)
-2019-01-19 16:18:58.018  INFO 39759 --- [Test worker] es.santalucia.api.ApiApplicationTests    : No active profile set, falling back to default profiles: default
-2019-01-19 16:19:00.579  INFO 39759 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-01-19 16:19:00.582  INFO 39759 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-01-19 16:19:00.635  INFO 39759 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31ms. Found 0 repository interfaces.
-2019-01-19 16:19:00.654  INFO 39759 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-01-19 16:19:00.655  INFO 39759 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-01-19 16:19:00.660  INFO 39759 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4ms. Found 0 repository interfaces.
-2019-01-19 16:19:00.675  INFO 39759 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-01-19 16:19:00.676  INFO 39759 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-01-19 16:19:00.696  INFO 39759 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19ms. Found 0 repository interfaces.
-2019-01-19 16:19:01.959  INFO 39759 --- [Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6e58f8c8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-01-19 16:19:02.054  INFO 39759 --- [Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$edd945fa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-01-19 16:19:02.536  INFO 39759 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-01-19 16:19:02.853  INFO 39759 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-01-19 16:19:03.004  INFO 39759 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2019-01-19 16:19:03.120  INFO 39759 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
-2019-01-19 16:19:03.122  INFO 39759 --- [Test worker] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-01-19 16:19:03.398  INFO 39759 --- [Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-01-19 16:19:03.618  INFO 39759 --- [Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2019-01-19 16:19:04.580 DEBUG 39759 --- [Test worker] org.hibernate.SQL                        : 
+2019-01-20 00:01:28.931  WARN 54539 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h57m45s971ms).
+2019-01-20 00:39:09.869  WARN 54539 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=37m40s938ms).
+2019-01-20 00:39:39.394  WARN 54539 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s525ms), soft-evicting connections from pool.
+2019-01-20 01:58:20.670  WARN 54539 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m40s700ms).
+2019-01-20 07:38:10.398  WARN 54539 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4h7m48s802ms).
+2019-01-20 10:15:04.927  WARN 54539 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h36m54s96ms).
+2019-01-20 12:21:21.300  WARN 54539 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h6m16s815ms).
+2019-01-20 12:21:50.763  WARN 54539 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s459ms), soft-evicting connections from pool.
+2019-01-20 14:12:46.555  WARN 54539 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s948ms).
+2019-01-20 15:41:32.536  WARN 54539 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h27m15s585ms).
+2019-01-20 16:27:12.556  INFO 54539 --- [Thread-11] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-01-20 16:27:12.581  INFO 54539 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-01-20 16:27:12.608  INFO 54539 --- [Thread-11] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-01-20 16:27:12.624 DEBUG 54539 --- [Thread-11] org.hibernate.SQL                        : 
     
     drop table if exists elements
-2019-01-19 16:19:04.610 DEBUG 39759 --- [Test worker] org.hibernate.SQL                        : 
+2019-01-20 16:27:12.649 DEBUG 54539 --- [Thread-11] org.hibernate.SQL                        : 
     
     drop table if exists hibernate_sequence
-2019-01-19 16:19:04.611 DEBUG 39759 --- [Test worker] org.hibernate.SQL                        : 
+2019-01-20 16:27:12.651 DEBUG 54539 --- [Thread-11] org.hibernate.SQL                        : 
     
     drop table if exists pages
-2019-01-19 16:19:04.612 DEBUG 39759 --- [Test worker] org.hibernate.SQL                        : 
+2019-01-20 16:27:12.655 DEBUG 54539 --- [Thread-11] org.hibernate.SQL                        : 
     
     drop table if exists users
-2019-01-19 16:19:04.616 DEBUG 39759 --- [Test worker] org.hibernate.SQL                        : 
-    
-    create table elements (
-       id integer not null,
-        attribute_name varchar(255),
-        element_id integer,
-        page_id integer,
-        value varchar(255),
-        primary key (id)
-    ) engine=MyISAM
-2019-01-19 16:19:04.625 DEBUG 39759 --- [Test worker] org.hibernate.SQL                        : 
-    
-    create table hibernate_sequence (
-       next_val bigint
-    ) engine=MyISAM
-2019-01-19 16:19:04.647 DEBUG 39759 --- [Test worker] org.hibernate.SQL                        : 
-    
-    insert into hibernate_sequence values ( 1 )
-2019-01-19 16:19:04.650 DEBUG 39759 --- [Test worker] org.hibernate.SQL                        : 
-    
-    insert into hibernate_sequence values ( 1 )
-2019-01-19 16:19:04.651 DEBUG 39759 --- [Test worker] org.hibernate.SQL                        : 
-    
-    insert into hibernate_sequence values ( 1 )
-2019-01-19 16:19:04.653 DEBUG 39759 --- [Test worker] org.hibernate.SQL                        : 
-    
-    create table pages (
-       id integer not null,
-        page_id integer,
-        primary key (id)
-    ) engine=MyISAM
-2019-01-19 16:19:04.668 DEBUG 39759 --- [Test worker] org.hibernate.SQL                        : 
-    
-    create table users (
-       id integer not null,
-        email varchar(255),
-        hash varchar(255),
-        username varchar(255),
-        primary key (id)
-    ) engine=MyISAM
-2019-01-19 16:19:04.690  INFO 39759 --- [Test worker] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@7e4e4d8d'
-2019-01-19 16:19:04.695  INFO 39759 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-01-19 16:19:06.365  INFO 39759 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-01-19 16:19:08.549  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : note: noprealloc may hurt performance in many applications
-2019-01-19 16:19:08.571  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-01-19T16:19:08.570+0100 I CONTROL  [initandlisten] MongoDB starting : pid=39784 port=55201 dbpath=/var/folders/51/bfgrc3857cz1czsv73r849fh0000gn/T/embedmongo-db-d87a6515-eb74-4430-a2c7-c9a183a488f2 64-bit host=MacBook-Air-77.home
-2019-01-19 16:19:08.571  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-01-19T16:19:08.570+0100 I CONTROL  [initandlisten] db version v3.5.5
-2019-01-19 16:19:08.571  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-01-19T16:19:08.570+0100 I CONTROL  [initandlisten] git version: 98515c812b6fa893613f063dae568ff8319cbfbd
-2019-01-19 16:19:08.572  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-01-19T16:19:08.570+0100 I CONTROL  [initandlisten] allocator: system
-2019-01-19 16:19:08.572  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-01-19T16:19:08.570+0100 I CONTROL  [initandlisten] modules: none
-2019-01-19 16:19:08.572  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-01-19T16:19:08.570+0100 I CONTROL  [initandlisten] build environment:
-2019-01-19 16:19:08.572  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-01-19T16:19:08.570+0100 I CONTROL  [initandlisten]     distarch: x86_64
-2019-01-19 16:19:08.573  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-01-19T16:19:08.570+0100 I CONTROL  [initandlisten]     target_arch: x86_64
-2019-01-19 16:19:08.573  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-01-19T16:19:08.571+0100 I CONTROL  [initandlisten] options: { net: { bindIp: "127.0.0.1", http: { enabled: false }, port: 55201 }, security: { authorization: "disabled" }, storage: { dbPath: "/var/folders/51/bfgrc3857cz1czsv73r849fh0000gn/T/embedmongo-db-d87a6515-eb74-4430-a2c7-c9a183a488f2", journal: { enabled: false }, mmapv1: { preallocDataFiles: false, smallFiles: true }, syncPeriodSecs: 0.0 } }
-2019-01-19 16:19:08.573  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-01-19T16:19:08.573+0100 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3584M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=0,log_size=2GB),statistics_log=(wait=0),verbose=(recovery_progress),,log=(enabled=false),
-2019-01-19 16:19:09.350  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-01-19T16:19:09.350+0100 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
-2019-01-19 16:19:09.350  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-01-19T16:19:09.350+0100 I CONTROL  [initandlisten] 
-2019-01-19 16:19:09.351  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-01-19T16:19:09.350+0100 I CONTROL  [initandlisten] ** NOTE: This is a development version (3.5.5) of MongoDB.
-2019-01-19 16:19:09.352  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-01-19T16:19:09.350+0100 I CONTROL  [initandlisten] **       Not recommended for production.
-2019-01-19 16:19:09.352  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-01-19T16:19:09.350+0100 I CONTROL  [initandlisten] 
-2019-01-19 16:19:09.589  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-01-19T16:19:09.589+0100 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/var/folders/51/bfgrc3857cz1czsv73r849fh0000gn/T/embedmongo-db-d87a6515-eb74-4430-a2c7-c9a183a488f2/diagnostic.data'
-2019-01-19 16:19:09.933  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-01-19T16:19:09.933+0100 I INDEX    [initandlisten] build index on: admin.system.version properties: { v: 2, key: { version: 1 }, name: "incompatible_with_version_32", ns: "admin.system.version" }
-2019-01-19 16:19:09.934  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-01-19T16:19:09.933+0100 I INDEX    [initandlisten] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
-2019-01-19 16:19:09.965  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-01-19T16:19:09.965+0100 I INDEX    [initandlisten] build index done.  scanned 0 total records. 0 secs
-2019-01-19 16:19:09.966  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-01-19T16:19:09.966+0100 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.4
-2019-01-19 16:19:09.966  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-01-19T16:19:09.966+0100 I NETWORK  [thread1] waiting for connections on port 55201
-2019-01-19 16:19:09.967  INFO 39759 --- [Test worker] d.f.embed.mongo.MongodExecutable         : start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@570741f8
-2019-01-19 16:19:10.386  INFO 39759 --- [Test worker] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:55201], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
-2019-01-19 16:19:10.387  INFO 39759 --- [Test worker] org.mongodb.driver.cluster               : Adding discovered server localhost:55201 to client view of cluster
-2019-01-19 16:19:10.448  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-01-19T16:19:10.448+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:55210 #1 (1 connection now open)
-2019-01-19 16:19:10.465  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-01-19T16:19:10.465+0100 I NETWORK  [conn1] received client metadata from 127.0.0.1:55210 conn1: { driver: { name: "mongo-java-driver", version: "3.8.2" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "10.14.2" }, platform: "Java/Oracle Corporation/1.8.0_131-b11" }
-2019-01-19 16:19:10.498  INFO 39759 --- [cluster-ClusterId{value='5c433feeafa6ba9b4fc39546', description='null'}-localhost:55201] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:1}] to localhost:55201
-2019-01-19 16:19:10.503  INFO 39759 --- [cluster-ClusterId{value='5c433feeafa6ba9b4fc39546', description='null'}-localhost:55201] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:55201, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 5, 5]}, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=1984593}
-2019-01-19 16:19:10.505  INFO 39759 --- [cluster-ClusterId{value='5c433feeafa6ba9b4fc39546', description='null'}-localhost:55201] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
-2019-01-19 16:19:11.114  INFO 39759 --- [Test worker] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:55201], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
-2019-01-19 16:19:11.234  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-01-19T16:19:11.234+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:55212 #2 (2 connections now open)
-2019-01-19 16:19:11.320  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-01-19T16:19:11.320+0100 I NETWORK  [conn2] received client metadata from 127.0.0.1:55212 conn2: { driver: { name: "mongo-java-driver|mongo-java-driver-reactivestreams", version: "3.8.2|1.9.2" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "10.14.2" }, platform: "Java/Oracle Corporation/1.8.0_131-b11" }
-2019-01-19 16:19:11.351  INFO 39759 --- [cluster-ClusterId{value='5c433fefafa6ba9b4fc39547', description='null'}-localhost:55201] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:2}] to localhost:55201
-2019-01-19 16:19:11.355  INFO 39759 --- [cluster-ClusterId{value='5c433fefafa6ba9b4fc39547', description='null'}-localhost:55201] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:55201, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 5, 5]}, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=3803090}
-2019-01-19 16:19:12.855  INFO 39759 --- [Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/manage'
-2019-01-19 16:19:13.001  INFO 39759 --- [Test worker] es.santalucia.api.ApiApplicationTests    : Started ApiApplicationTests in 15.736 seconds (JVM running for 17.71)
-2019-01-19 16:19:13.135  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-01-19T16:19:13.135+0100 I NETWORK  [thread1] connection accepted from 127.0.0.1:55213 #3 (3 connections now open)
-2019-01-19 16:19:13.135  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-01-19T16:19:13.135+0100 I COMMAND  [conn3] terminating, shutdown command received
-2019-01-19 16:19:13.135  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-01-19T16:19:13.135+0100 I NETWORK  [conn3] shutdown: going to close listening sockets...
-2019-01-19 16:19:13.135  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-01-19T16:19:13.135+0100 I NETWORK  [conn3] closing listening socket: 7
-2019-01-19 16:19:13.136  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-01-19T16:19:13.135+0100 I NETWORK  [conn3] closing listening socket: 8
-2019-01-19 16:19:13.136  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-01-19T16:19:13.135+0100 I NETWORK  [conn3] removing socket file: /tmp/mongodb-55201.sock
-2019-01-19 16:19:13.136  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-01-19T16:19:13.135+0100 I NETWORK  [conn3] shutdown: going to flush diaglog...
-2019-01-19 16:19:13.136  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-01-19T16:19:13.135+0100 I FTDC     [conn3] Shutting down full-time diagnostic data capture
-2019-01-19 16:19:13.138  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-01-19T16:19:13.138+0100 I STORAGE  [conn3] WiredTigerKVEngine shutting down
-2019-01-19 16:19:13.157  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-01-19T16:19:13.157+0100 I -        [conn2] end connection 127.0.0.1:55212 (3 connections now open)
-2019-01-19 16:19:13.180  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-01-19T16:19:13.158+0100 I -        [conn1] end connection 127.0.0.1:55210 (2 connections now open)
-2019-01-19 16:19:13.509  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-01-19T16:19:13.509+0100 I STORAGE  [conn3] shutdown: removing fs lock...
-2019-01-19 16:19:13.510  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-01-19T16:19:13.509+0100 I CONTROL  [conn3] now exiting
-2019-01-19 16:19:13.510  INFO 39759 --- [Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2019-01-19T16:19:13.509+0100 I CONTROL  [conn3] shutting down with code:0
-2019-01-19 16:19:13.631  INFO 39759 --- [Thread-10] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-01-19 16:19:13.634  INFO 39759 --- [Thread-10] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2019-01-19 16:19:13.634  INFO 39759 --- [Thread-10] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
-2019-01-19 16:19:13.635 DEBUG 39759 --- [Thread-10] org.hibernate.SQL                        : 
-    
-    drop table if exists elements
-2019-01-19 16:19:13.638 DEBUG 39759 --- [Thread-10] org.hibernate.SQL                        : 
-    
-    drop table if exists hibernate_sequence
-2019-01-19 16:19:13.641 DEBUG 39759 --- [Thread-10] org.hibernate.SQL                        : 
-    
-    drop table if exists pages
-2019-01-19 16:19:13.643 DEBUG 39759 --- [Thread-10] org.hibernate.SQL                        : 
-    
-    drop table if exists users
-2019-01-19 16:19:13.646  INFO 39759 --- [Thread-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2019-01-19 16:19:13.658  INFO 39759 --- [Thread-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2019-01-19 16:19:46.299  INFO 39829 --- [main] es.santalucia.api.ApiApplication         : Starting ApiApplication on MacBook-Air-77.home with PID 39829 (started by admin in /Users/admin/Library/Mobile Documents/com~apple~CloudDocs/repos/afkar/santalucia-be)
-2019-01-19 16:19:46.305  INFO 39829 --- [main] es.santalucia.api.ApiApplication         : No active profile set, falling back to default profiles: default
-2019-01-19 16:19:49.170  INFO 39829 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-01-19 16:19:49.173  INFO 39829 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-01-19 16:19:49.217  INFO 39829 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31ms. Found 0 repository interfaces.
-2019-01-19 16:19:49.280  INFO 39829 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-01-19 16:19:49.281  INFO 39829 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-01-19 16:19:49.284  INFO 39829 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 repository interfaces.
-2019-01-19 16:19:49.293  INFO 39829 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-01-19 16:19:49.294  INFO 39829 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-01-19 16:19:49.297  INFO 39829 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 repository interfaces.
-2019-01-19 16:19:50.348  INFO 39829 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d26590f0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-01-19 16:19:50.407  INFO 39829 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$51e5de22] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-01-19 16:19:51.249  INFO 39829 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9000 (http)
-2019-01-19 16:19:51.308  INFO 39829 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-01-19 16:19:51.309  INFO 39829 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.14]
-2019-01-19 16:19:51.327  INFO 39829 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/admin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-2019-01-19 16:19:51.585  INFO 39829 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-01-19 16:19:51.585  INFO 39829 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5146 ms
-2019-01-19 16:19:52.507  INFO 39829 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
-2019-01-19 16:19:52.932  INFO 39829 --- [cluster-ClusterId{value='5c434018afa6ba9b95f11983', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:38}] to localhost:27017
-2019-01-19 16:19:52.942  INFO 39829 --- [cluster-ClusterId{value='5c434018afa6ba9b95f11983', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 2]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=8149293}
-2019-01-19 16:19:52.995  INFO 39829 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
-2019-01-19 16:19:53.031  INFO 39829 --- [cluster-ClusterId{value='5c434018afa6ba9b95f11984', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:39}] to localhost:27017
-2019-01-19 16:19:53.032  INFO 39829 --- [cluster-ClusterId{value='5c434018afa6ba9b95f11984', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 2]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1157664}
-2019-01-19 16:19:53.795  INFO 39829 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-01-19 16:19:54.051  INFO 39829 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-01-19 16:19:54.142  INFO 39829 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2019-01-19 16:19:54.285  INFO 39829 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
-2019-01-19 16:19:54.287  INFO 39829 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-01-19 16:19:54.555  INFO 39829 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-01-19 16:19:54.818  INFO 39829 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2019-01-19 16:19:56.200 DEBUG 39829 --- [main] org.hibernate.SQL                        : 
-    
-    drop table if exists elements
-2019-01-19 16:19:56.230 DEBUG 39829 --- [main] org.hibernate.SQL                        : 
-    
-    drop table if exists hibernate_sequence
-2019-01-19 16:19:56.231 DEBUG 39829 --- [main] org.hibernate.SQL                        : 
-    
-    drop table if exists pages
-2019-01-19 16:19:56.233 DEBUG 39829 --- [main] org.hibernate.SQL                        : 
-    
-    drop table if exists users
-2019-01-19 16:19:56.241 DEBUG 39829 --- [main] org.hibernate.SQL                        : 
-    
-    create table elements (
-       id integer not null,
-        attribute_name varchar(255),
-        element_id integer,
-        page_id integer,
-        value varchar(255),
-        primary key (id)
-    ) engine=MyISAM
-2019-01-19 16:19:56.265 DEBUG 39829 --- [main] org.hibernate.SQL                        : 
-    
-    create table hibernate_sequence (
-       next_val bigint
-    ) engine=MyISAM
-2019-01-19 16:19:56.275 DEBUG 39829 --- [main] org.hibernate.SQL                        : 
-    
-    insert into hibernate_sequence values ( 1 )
-2019-01-19 16:19:56.277 DEBUG 39829 --- [main] org.hibernate.SQL                        : 
-    
-    insert into hibernate_sequence values ( 1 )
-2019-01-19 16:19:56.278 DEBUG 39829 --- [main] org.hibernate.SQL                        : 
-    
-    insert into hibernate_sequence values ( 1 )
-2019-01-19 16:19:56.279 DEBUG 39829 --- [main] org.hibernate.SQL                        : 
-    
-    create table pages (
-       id integer not null,
-        page_id integer,
-        primary key (id)
-    ) engine=MyISAM
-2019-01-19 16:19:56.293 DEBUG 39829 --- [main] org.hibernate.SQL                        : 
-    
-    create table users (
-       id integer not null,
-        email varchar(255),
-        hash varchar(255),
-        username varchar(255),
-        primary key (id)
-    ) engine=MyISAM
-2019-01-19 16:19:56.315  INFO 39829 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@58f290bc'
-2019-01-19 16:19:56.318  INFO 39829 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-01-19 16:19:56.937  INFO 39829 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-01-19 16:19:57.980  INFO 39829 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/manage'
-2019-01-19 16:19:58.165  INFO 39829 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9000 (http) with context path ''
-2019-01-19 16:19:58.171  INFO 39829 --- [main] es.santalucia.api.ApiApplication         : Started ApiApplication in 12.804 seconds (JVM running for 13.388)
-2019-01-19 16:27:12.900  INFO 39829 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-01-19 16:27:12.904  INFO 39829 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2019-01-19 16:27:12.906  INFO 39829 --- [Thread-5] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
-2019-01-19 16:27:12.909 DEBUG 39829 --- [Thread-5] org.hibernate.SQL                        : 
-    
-    drop table if exists elements
-2019-01-19 16:27:12.915 DEBUG 39829 --- [Thread-5] org.hibernate.SQL                        : 
-    
-    drop table if exists hibernate_sequence
-2019-01-19 16:27:12.918 DEBUG 39829 --- [Thread-5] org.hibernate.SQL                        : 
-    
-    drop table if exists pages
-2019-01-19 16:27:12.924 DEBUG 39829 --- [Thread-5] org.hibernate.SQL                        : 
-    
-    drop table if exists users
-2019-01-19 16:27:12.940  INFO 39829 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2019-01-19 16:27:12.952  INFO 39829 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-01-20 16:27:12.722  INFO 54539 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-01-20 16:27:12.750  INFO 54539 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
