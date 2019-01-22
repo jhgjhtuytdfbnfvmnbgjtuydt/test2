@@ -22,10 +22,13 @@ public class PageService {
 	public Page findOne(Integer id) {
 		return pageRepository.findById(id).get();
 	}
-	
+
 	@Transactional(readOnly = false)
 	public Page save(Page entity) {
-		return pageRepository.save(entity);
+    // if (user == null) {
+    //   throw new ResourceNotFoundException(id, "user not found");
+    // }
+    return pageRepository.save(entity);
 	}
 
 	@Transactional(readOnly = false)
@@ -34,4 +37,4 @@ public class PageService {
 	}
 
 }
-	
+
