@@ -12,29 +12,28 @@ import java.util.List;
 @Transactional(readOnly = true)
 public class PageService {
 
-	@Autowired
-	private PageRepository pageRepository;
+  @Autowired
+  private PageRepository pageRepository;
 
-	public List<Page> findAll() {
-		return pageRepository.findAll();
-	}
+  public List<Page> findAll() {
+    return pageRepository.findAll();
+  }
 
-	public Page findOne(Integer id) {
-		return pageRepository.findById(id).get();
-	}
+  public Page findOne(Integer id) {
+    return pageRepository.findById(id).get();
+  }
 
-	@Transactional(readOnly = false)
-	public Page save(Page entity) {
+  @Transactional(readOnly = false)
+  public Page save(Page entity) {
     // if (user == null) {
-    //   throw new ResourceNotFoundException(id, "user not found");
+    // throw new ResourceNotFoundException(id, "user not found");
     // }
     return pageRepository.save(entity);
-	}
+  }
 
-	@Transactional(readOnly = false)
-	public void delete(Page entity) {
-		pageRepository.delete(entity);
-	}
+  @Transactional(readOnly = false)
+  public void delete(Page entity) {
+    pageRepository.delete(entity);
+  }
 
 }
-
